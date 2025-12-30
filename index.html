@@ -182,62 +182,30 @@
 
     <!-- Contact Section -->
     
-   <section class="section contact" id="contact">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Contact Me</h2>
-      <p class="section-subtitle">
-        Get in touch and let's create something amazing together
-      </p>
-    </div>
+<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+  <input type="hidden" name="access_key" value="d50c4f94-350a-43f0-98c7-ae7b96ea6c81">
+  <input type="hidden" name="email_subject" value="New Contact Message from Portfolio">
 
-      <input type="hidden" name="access_key" value="d50c4f94-350a-43f0-98c7-ae7b96ea6c81">
-
-      <div class="form-group">
-        <input
-          type="text"
-          name="name"
-          class="form-control"
-          placeholder="Your Name"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <input
-          type="email"
-          name="email"
-          class="form-control"
-          placeholder="Your Email"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <input
-          type="text"
-          name="subject"
-          class="form-control"
-          placeholder="Subject"
-          required
-        >
-      </div>
-
-      <div class="form-group">
-        <textarea
-          name="message"
-          class="form-control"
-          placeholder="Your Message"
-          required
-        ></textarea>
-      </div>
-
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+  <div class="form-group">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
   </div>
-</section>
+
+  <div class="form-group">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
 
 
 
@@ -262,6 +230,7 @@
 </body>
 
 </html>
+
 
 
 
