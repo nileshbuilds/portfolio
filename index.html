@@ -182,21 +182,63 @@
 
     <!-- Contact Section -->
     
-    <form action="https://api.web3forms.com/submit" method="POST">
+   <section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">
+        Get in touch and let's create something amazing together
+      </p>
+    </div>
 
-  <input type="hidden" name="access_key" value="d50c4f94-350a-43f0-98c7-ae7b96ea6c81">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-  <input type="text" name="name" placeholder="Your Name" required>
+      <input type="hidden" name="access_key" value="d50c4f94-350a-43f0-98c7-ae7b96ea6c81">
 
-  <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-group">
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Your Name"
+          required
+        >
+      </div>
 
-  <input type="text" name="subject" placeholder="Subject" required>
+      <div class="form-group">
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        >
+      </div>
 
-  <textarea name="message" placeholder="Your Message" required></textarea>
+      <div class="form-group">
+        <input
+          type="text"
+          name="subject"
+          class="form-control"
+          placeholder="Subject"
+          required
+        >
+      </div>
 
-  <button type="submit">Send Message</button>
+      <div class="form-group">
+        <textarea
+          name="message"
+          class="form-control"
+          placeholder="Your Message"
+          required
+        ></textarea>
+      </div>
 
-</form>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
 
 
     <!-- Footer -->
@@ -220,6 +262,7 @@
 </body>
 
 </html>
+
 
 
 
