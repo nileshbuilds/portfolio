@@ -416,11 +416,12 @@
             transition: var(--transition);
         }
         
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(108, 99, 255, 0.1);
-        }
+       .form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.05);  /* ← SAME AS NORMAL STATE */
+}
+
         
         textarea.form-control {
             min-height: 150px;
@@ -563,3 +564,4 @@
                 font-size: 2.2rem;
             }
         }
+
