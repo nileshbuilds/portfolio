@@ -51,4 +51,21 @@
 
         document.querySelectorAll('.section-title, .section-subtitle, .skill-card, .project-card').forEach(el => {
             observer.observe(el);
+
         });
+
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: data
+    });
+
+    alert("Message sent!");
+    form.reset();
+  });
